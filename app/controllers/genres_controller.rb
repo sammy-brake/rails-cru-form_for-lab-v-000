@@ -4,12 +4,12 @@ class GenresController < ApplicationController
     @genre = Genre.find_by(params[:id])
   end
 
-  def new 
+  def new
     @genre = Genre.new
-  end 
+  end
 
-  def edit 
+  def edit
       @genre = Genre.find_by(params[:id])
-  end 
+  end
 
 end
