@@ -13,4 +13,11 @@ class ArtistsController < ApplicationController
     @artist = Artist.create(params.require(:artist).permit(:name, :bio))
     redirect_to artist_path(@artist)
   end
+
+  def edit 
+    @artist = Arist.find_by(params[:id])
+  end 
+
+  def update 
+  end 
 end
