@@ -5,7 +5,7 @@ class ArtistsController < ApplicationController
     @artist = Artist.find_by(params[:id])
   end
 
-  def new 
-    @artist = Artist.new 
-  end 
+  def new
+    @artist = Artist.new
+  end
 end
