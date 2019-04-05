@@ -3,7 +3,7 @@ class SongsController < ApplicationController
 
   def show
     @song = Song.find_by(params[:id])
-    @genre = Genre.find_by(@song.genre_id.string)
+    @genre = Genre.find_by(@song.genre_id.to_s)
   end
 
   def index
