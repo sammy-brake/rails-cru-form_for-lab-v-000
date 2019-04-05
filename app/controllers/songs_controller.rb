@@ -2,7 +2,9 @@ class SongsController < ApplicationController
   # belongs_to :artist
 
   def show
+    
     @song = Song.find_by(params[:id])
+    @genre = Genre.find_by(@song.genre_id)
   end
 
   def index
