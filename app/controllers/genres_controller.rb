@@ -12,12 +12,12 @@ class GenresController < ApplicationController
       @genre = Genre.find_by(params[:id])
   end
 
-  def create 
-  end 
+  def create
+  end
 
-  def update 
+  def update
     @genre = Genre.find_by(params[:id])
     @genre.update(params.require(:genre).permit(:name))
-  end 
+  end
 
 end
