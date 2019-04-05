@@ -15,7 +15,7 @@ class ArtistsController < ApplicationController
   end
 
   def edit
-    @artist = Arist.find_by(params[:id])
+    @artist = Artist.find_by(params[:id])
   end
 
   def update
